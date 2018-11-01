@@ -1,18 +1,17 @@
-package com.kvo.service;
-
+package com.kvo.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * 这里主要系统操作类
+ * @author fanwei
  */
 @EnableEurekaClient
 @SpringBootApplication
-public class PiggerServiceApplication {
+public class ConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PiggerServiceApplication.class,args);
+        SpringApplication.run(ConsumerApplication.class,args);
     }
 }
