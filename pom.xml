@@ -11,8 +11,8 @@
         <module>pigger-user</module>
         <module>pigger-service</module>
         <module>pigger-registy</module>
-        <module>demo-client-consumer</module>
         <module>demo-client-protal</module>
+        <module>demo-client-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
