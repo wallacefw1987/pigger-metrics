@@ -13,6 +13,8 @@
         <module>pigger-registy</module>
         <module>demo-client-protal</module>
         <module>demo-client-consumer</module>
+        <module>demo-config-server</module>
+        <module>demo-erueka-server</module>
     </modules>
     <packaging>pom</packaging>
 
