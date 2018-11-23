@@ -1,6 +1,6 @@
 #spring:
 #  application:
-#    name: demo-eureka-server
+#    name: demo-eureka-client
 #  cloud:
 #    config:
 #      uri: http://localhost:8022
@@ -9,4 +9,4 @@
 #    web:
 #      exposure:
 #        include: '*'
-#访问demo-client-consumer时候才启动这个，屏蔽application-security.yml
+#启动sping-security.yml时候屏蔽

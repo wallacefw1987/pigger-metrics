@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: client1
+  security:
+    user:
+      name: admin
+      password: Kk460502
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
+

@@ -1,3 +1,6 @@
 eureka:
   client:
     eureka-service-url-poll-interval-seconds: 10
+spring:
+  profiles:
+    active: security
