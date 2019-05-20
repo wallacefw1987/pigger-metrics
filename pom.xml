@@ -16,6 +16,8 @@
         <module>demo-config-server</module>
         <module>demo-erueka-server</module>
         <module>demo-erurka-client</module>
+        <module>demo-test</module>
+        <module>demo-multi-mybatis</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,14 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kvo.mapper.UserMapper">
+    <resultMap id="User" type="com.kvo.model.User">
+        <id column="id" property="id" javaType="INTEGER" />
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+    </resultMap>
+    
+    <select id="selectById" parameterType="integer" resultMap="User">
+        select id,name from tep_user where id = #(id)
+    </select>
+
+</mapper>
