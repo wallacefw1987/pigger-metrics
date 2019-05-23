@@ -1,6 +1,5 @@
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kvo.mapper.UserMapper">
     <resultMap id="User" type="com.kvo.model.User">
         <id column="id" property="id" javaType="INTEGER" />
@@ -11,4 +10,8 @@
         select id,name from tep_user where id = #(id)
     </select>
 
+
+    <insert id="insert" parameterType="com.kvo.model.User">
+        INSERT INTO `tep_user`(`name`) VALUES ( #{name});
+    </insert>
 </mapper>

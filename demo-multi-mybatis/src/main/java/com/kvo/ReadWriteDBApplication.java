@@ -10,7 +10,6 @@ import tk.mybatis.spring.annotation.MapperScan;
  *
  */
 @SpringBootApplication
-@MapperScan("com.kvo.mapper")
 public class ReadWriteDBApplication
 {
     public static void main( String[] args )

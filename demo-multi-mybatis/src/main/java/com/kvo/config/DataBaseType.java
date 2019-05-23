@@ -9,7 +9,7 @@ package com.kvo.config;
 public enum DataBaseType {
 
     MASTER("master"),
-    SLAVE("slabe");
+    SLAVE("slave");
 
     DataBaseType(String name) {
         this.name = name;
